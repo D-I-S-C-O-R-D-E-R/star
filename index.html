@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天体観測会 — 夜空を、見上げよう。</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="space"></canvas>
+  <div class="vignette"></div>
+  <div class="grain"></div>
+
+  <header class="hud">
+    <div class="logo">ASTRO / OBSERVATION</div>
+    <div class="progress"><span id="progressBar"></span></div>
+  </header>
+
+  <main>
+    <section class="scene hero" id="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">ASTRONOMICAL OBSERVATION</p>
+        <h1>天体観測会</h1>
+        <p class="sub">夜空を、見上げよう。</p>
+        <p class="date">STARS ARE WAITING FOR YOU.</p>
+      </div>
+      <div class="scroll-hint">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="scene intro">
+      <div class="panel reveal">
+        <p class="eyebrow">01 / THE NIGHT</p>
+        <h2>夜空には、<br>まだ知らない世界がある。</h2>
+        <p>少しだけ立ち止まって、空を見上げてみませんか。<br>星は、遠い昔の光を今のあなたへ届けています。</p>
+      </div>
+    </section>
+<section class="scene moon">
+      <div class="moon-orb"></div>
+      <div class="panel reveal">
+        <p class="eyebrow">03 / THE MOON</p>
+        <h2>月の向こう側へ。</h2>
+        <p>スクロールすると、月がゆっくり夜空を横切ります。</p>
+      </div>
+    </section>
+
+    <section class="scene meteor">
+      <div class="panel reveal">
+        <p class="eyebrow">04 / MAKE A WISH</p>
+        <h2>流星が見えたら、<br>願いごとを。</h2>
+        <p>次の流星は、いつ現れるかわかりません。</p>
+      </div>
+    </section>
+
+    <section class="scene info">
+      <div class="info-grid">
+        <div class="panel reveal">
+          <p class="eyebrow">05 / OBSERVATION NIGHT</p>
+          <h2>観測会について</h2>
+          <div class="details">
+            <div><span>DATE</span><strong>00.00 / 00.00</strong></div>
+            <div><span>TIME</span><strong>19:00 — 21:00</strong></div>
+            <div><span>PLACE</span><strong>観測広場</strong></div>
+            <div><span>BRING</span><strong>防寒着・飲み物</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene ending" id="ending">
+      <div class="ending-copy">
+        <p class="eyebrow">THE NIGHT IS YOURS</p>
+        <h2>さあ、夜空へ。</h2>
+        <p>最後まで見つけてくれて、ありがとう。</p>
+        <button id="secretButton">ENTER THE NIGHT</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <div class="secret" id="secret">
+    <button class="close" id="closeSecret">×</button>
+    <p class="eyebrow">SECRET FOUND</p>
+    <h2>星は、<br>見つけた人のもの。</h2>
+    <p>夜空のどこかに、まだ秘密が残っています。</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
